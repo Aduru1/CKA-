@@ -10,7 +10,7 @@ spec:
       - sleep
       - "3600"
     volumeMounts:
-        mountPath: /centos1
+      - mountPath: /centos1
         name: test
   - name: centos2
     image: centos:7
