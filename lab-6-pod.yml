@@ -13,3 +13,6 @@ spec:
       volumeMounts:
         - mountPath: "/var/www"
           name: pv-volume
+
+#configure a  2 GB persistant storage that uses a permanent directory on host that runs the pod . 
+#configure a deployment that runs the httpd web  server &  mounts the storage on /var/www
