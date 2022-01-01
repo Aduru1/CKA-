@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: lab6-pod
+spec:
+  volumes:
+    - name: pv-volume
+      persistentVolumeClaim:
+        claimName: pv-claim
+  containers:
+    - name: pv-container
+      image: httpd
+      volumeMounts:
+        - mountPath: "/var/www"
+          name: pv-volume
